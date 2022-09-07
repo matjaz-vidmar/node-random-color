@@ -1,26 +1,17 @@
-import chalk from 'chalk';
+import kuler from 'kuler';
+import randomColor from 'randomcolor';
 
-import randomColor  from('randomcolor')
-const color = randomColor()
-// function square(num) {
-// const squareArray = [];
-// let result;
-// for (let i = 0; i < num; i++) {
-// result = '';
-// for (let j = 0; j < num; j++) {
-// result += '#';
-// }
-// squareArray.push(result);
-// }
-// return squareArray.join('\n');
-// }
-// console.log(square(20));
+const color = randomColor({
+  luminosity: process.argv[3],
+  hue: process.argv[2],
+});
 
-// we could just type out the #
-// with kuler you get all the lines
-// randomColor
-// search node command line arguments
-// console.log(process.argv[2])
-//
-//
-//
+console.log(kuler('#############################', color));
+console.log(kuler('#############################', color));
+console.log(kuler('#############################', color));
+console.log(kuler('#####                  ######', color));
+console.log(kuler(`#####      ${color}     ######`, color));
+console.log(kuler('#####                  ######', color));
+console.log(kuler('#############################', color));
+console.log(kuler('#############################', color));
+console.log(kuler('#############################', color));

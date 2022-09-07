@@ -43,8 +43,7 @@
     "@typescript-eslint/utils": "5.36.2"
   },
   "dependencies": {
-    "chalk": "^5.0.1",
-    "colors": "^1.4.0",
+    "kuler": "^2.0.0",
     "randomcolor": "^0.6.2"
   }
 }
